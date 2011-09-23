@@ -106,3 +106,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 alias rvm="rbenv"
 
+## z.sh
+# https://github.com/sjl/z-zsh
+source ~/.zsh/plugins/z/z.sh
+function precmd () { z --add "$(pwd -P)" }
+
