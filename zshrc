@@ -46,7 +46,7 @@ setopt hist_verify # disp history before run
 typeset -U path # load PATH at once only
 
 ## Completion configuration
-fpath=(~/.zsh/functions/ $fpath)
+fpath=(~/.zsh/functions $fpath)
 autoload -U compinit && compinit
 
 ## Alias configuration
@@ -61,12 +61,15 @@ alias ltr="ls -ltr"
 alias macvim="mvim --remote-silent"
 alias h="history"
 alias pr="powder restart"
+alias pl="powder log"
 alias po="popd"
 alias be="bundle exec"
 alias bc="bundle console"
 alias bep="bundle exec padrino"
 alias bepg="bundle exec padrino gen"
 alias bepr="bundle exec padrino rake"
+alias eq="earthquake"
+alias g="git"
 alias tig="tig --all"
 alias df="df -h"
 alias -g L='| less'
@@ -74,6 +77,7 @@ alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
 alias -g GI='| grep -i'
+alias -g GR='| growlnotify'
 alias -g V='| vim -R -'
 
 ## terminal configuration
