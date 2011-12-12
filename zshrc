@@ -112,7 +112,7 @@ RPROMPT="%1(v|%F{green}%1v%f|) ${RPROMPT}"
 # export PATH="$HOME/.rbenv/bin:$PATH"
 # eval "$(rbenv init -)"
 # alias rvm="rbenv"
-export PATH="$PATH:/usr/local/Cellar/ruby/1.9.2-p290/bin"
+export PATH="$PATH:/usr/local/Cellar/ruby/1.9.3-p0/bin"
 
 ## z.sh
 # https://github.com/sjl/z-zsh
