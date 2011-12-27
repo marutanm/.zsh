@@ -50,8 +50,6 @@ fpath=(~/.zsh/functions $fpath)
 autoload -U compinit && compinit
 
 ## Alias configuration
-# expand aliases before completing
-setopt complete_aliases # aliased ls needs if file/dir completions work
 
 alias j="jobs -l"
 alias ls="ls -G -w"
