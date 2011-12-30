@@ -73,6 +73,7 @@ alias gd="git diff"
 alias gs="git status"
 alias tig="tig --all"
 alias df="df -h"
+alias rake='noglob rake'
 alias -g L='| less'
 alias -g H='| head'
 alias -g T='| tail'
