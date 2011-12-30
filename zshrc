@@ -50,8 +50,6 @@ fpath=(~/.zsh/functions $fpath)
 autoload -U compinit && compinit
 
 ## Alias configuration
-# expand aliases before completing
-setopt complete_aliases # aliased ls needs if file/dir completions work
 
 alias j="jobs -l"
 alias ls="ls -G -w"
@@ -68,6 +66,7 @@ alias bc="bundle console"
 alias bep="bundle exec padrino"
 alias bepg="bundle exec padrino gen"
 alias bepr="bundle exec padrino rake"
+alias ber="bundle exec rake"
 alias eq="earthquake"
 alias g="git"
 alias gd="git diff"
@@ -88,8 +87,6 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
 ## Git
-# completion
-source ~/.zsh/plugins/git-completion.sh
 # prompt
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '(%b)'
@@ -112,7 +109,7 @@ RPROMPT="%1(v|%F{green}%1v%f|) ${RPROMPT}"
 # export PATH="$HOME/.rbenv/bin:$PATH"
 # eval "$(rbenv init -)"
 # alias rvm="rbenv"
-export PATH="$PATH:/usr/local/Cellar/ruby/1.9.2-p290/bin"
+export PATH="$PATH:/usr/local/Cellar/ruby/1.9.3-p0/bin"
 
 ## z.sh
 # https://github.com/sjl/z-zsh
