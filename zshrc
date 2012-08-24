@@ -81,6 +81,7 @@ alias -g G='| grep'
 alias -g GI='| grep -i'
 alias -g GR='| growlnotify'
 alias -g V='| vim -R -'
+alias gvimdiff=/usr/local/bin/mvimdiff
 
 ## terminal configuration
 export LSCOLORS=exfxcxdxbxegedabagacad
