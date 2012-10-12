@@ -82,6 +82,8 @@ alias -g GI='| grep -i'
 alias -g GR='| growlnotify'
 alias -g V='| vim -R -'
 alias gvimdiff=/usr/local/bin/mvimdiff
+alias openp="find . -type d -name '*.xcodeproj' -maxdepth 1 -print | xargs open"
+alias openw="find . -type d -name '*.xcworkspace' -maxdepth 1 -print | xargs open"
 
 ## terminal configuration
 export LSCOLORS=exfxcxdxbxegedabagacad
