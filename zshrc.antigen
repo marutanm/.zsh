@@ -3,3 +3,5 @@ ADOTDIR=$HOME/.zsh/antigen-bundle
 # https://github.com/zsh-users/antigen
 source ~/.zsh/antigen/antigen.zsh
 
+antigen-bundle git
+
