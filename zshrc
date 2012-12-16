@@ -6,6 +6,9 @@
 # LANG
 export LANG=ja_JP.UTF-8
 
+# Settings for Antigen
+source ~/.zsh/zshrc.antigen
+
 ## Default shell configuration
 # set prompt
 # http://zsh.sourceforge.net/Doc/Release/zsh_12.html#SEC40
