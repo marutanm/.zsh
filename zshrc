@@ -121,3 +121,5 @@ export PATH="/usr/local/Cellar/ruby/1.9.3-p0/bin:$PATH"
 source ~/.zsh/plugins/z/z.sh
 function precmd () { z --add "$(pwd -P)" }
 
+# npm
+export PATH="$PATH:/usr/local/share/npm/bin"
