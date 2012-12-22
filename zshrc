@@ -110,12 +110,6 @@ function _update_vcs_info_msg() {
 add-zsh-hook precmd _update_vcs_info_msg
 RPROMPT="%1(v|%F{green}%1v%f|) ${RPROMPT}"
 
-## rbenv
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
-# alias rvm="rbenv"
-export PATH="/usr/local/Cellar/ruby/1.9.3-p0/bin:$PATH"
-
 ## z.sh
 # https://github.com/sjl/z-zsh
 source ~/.zsh/plugins/z/z.sh
