@@ -37,7 +37,7 @@ bindkey "^p" history-beginning-search-backward-end
 bindkey "^n" history-beginning-search-forward-end
 
 ## Command history configuration
-HISTFILE=~/.zsh_history
+HISTFILE=~/.zsh/.zsh_history
 HISTSIZE=50000
 SAVEHIST=50000
 setopt share_history # share command history data
