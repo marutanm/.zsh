@@ -115,5 +115,11 @@ RPROMPT="%1(v|%F{green}%1v%f|) ${RPROMPT}"
 source ~/.zsh/plugins/z/z.sh
 function precmd () { z --add "$(pwd -P)" }
 
+## zaw
+# https://github.com/zsh-users/zaw
+source ~/.zsh/plugins/zaw/zaw.zsh
+bindkey '^R' zaw-history
+
 # npm
 export PATH="$PATH:/usr/local/share/npm/bin"
+
