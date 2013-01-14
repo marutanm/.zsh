@@ -14,7 +14,7 @@ source ~/.zsh/zshrc.antigen
 # http://zsh.sourceforge.net/Doc/Release/zsh_12.html#SEC40
 autoload colors && colors
 PROMPT="%{${fg[green]}%}%#%{${reset_color}%} "
-PROMPT2="%{${fg[green]}%}%_%#%{${reset_color}%} "
+PROMPT2="%{${fg[green]}%}%_>%{${reset_color}%} "
 SPROMPT="%{${fg[green]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
 RPROMPT="%{${fg[green]}%}[%~]%{${reset_color}%} "
 [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
