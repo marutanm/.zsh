@@ -126,3 +126,13 @@ bindkey '^R' zaw-history
 # npm
 export PATH="$PATH:/usr/local/share/npm/bin"
 
+zshaddhistory() {
+  local line=${1%%$'\n'}
+  local cmd=${line%% *}
+
+  [[ ${#line} -ge 5
+     && ${cmd} != (l[sal]|cs|man|po)
+     && ! ( ${line} =~ "(g|git) ci -am '.*'" )
+  ]]
+}
+
