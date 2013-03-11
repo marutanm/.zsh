@@ -122,6 +122,7 @@ function precmd () { z --add "$(pwd -P)" }
 # https://github.com/zsh-users/zaw
 source ~/.zsh/plugins/zaw/zaw.zsh
 bindkey '^R' zaw-history
+zstyle ':filter-select' max-lines 10
 
 # npm
 export PATH="$PATH:/usr/local/share/npm/bin"
